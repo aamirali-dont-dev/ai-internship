@@ -53,11 +53,14 @@ def linear_search_silent(arr, target):
             return i
     return -1
 
-
 def binary_search_silent(arr, target):
     low, high = 0, len(arr) - 1
     while low <= high:
         mid = (low + high) // 2
         if arr[mid] == target:
             return mid
-        elif arr[mid]
+        elif arr[mid] < target:   # move right
+            low = mid + 1
+        else:                     # move left
+            high = mid - 1
+    return -1

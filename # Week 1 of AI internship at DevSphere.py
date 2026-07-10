@@ -42,3 +42,4 @@ else:
     portfolio_type = "Conservative Portfolio"
 
 print(f"Based on your responses, your portfolio type is: {portfolio_type}")
+
